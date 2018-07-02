@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro';
+  color: #0f0e0e;
+  font-size: 16px;
+}
+
+* {
+
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display';
+}
+
+
+.nav-bar {
+  text-align: left;
+  font-weight:400;
+}
+
+.nav-bar-header {
+  background-color: #000;
+}
+
+/***** Nav *****/
+
+.nav-bar ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+    }
+
+.nav-bar li {
+     float: left;
+    }
+
+.nav-bar li a {
+     display: block;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     color: white;
+    }
+
+.nav-bar li a:hover {
+     background-color: #111;
+    }
+
+.nav-bar .null {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    }
+
+.nav-bar .sub {
+    color: #2196f3;
+    }
+
+.nav-bar .cart {
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+      background-color: #FFC107;
+    }
+.nav-bar .cart:hover {
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      background-color: #fcc82a;
+      }
+.nav-bar i {
+    color: black;
+}
+.nav-bar li:first-child img {
+  max-width: 22px;
+}
+/***** Header  Img *****/
+
+.bg {
+    background-image: url("http://www.papalote.org.mx/assets/img/img/login-bg/bg-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0 7rem 0;
+    color: white;
+    text-align: center;
+}
+
+.bg h1 {
+  font-size: 3rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.bg span {
+  font-size: 1.2rem;
+}
+
+h2.header-text {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: .3rem;
+}
+
+span.description {
+    color: #999999;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+/***** Content *****/
+
+.container {
+    margin: 0 1em;
+}
+
+.row {
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/***** Footer *****/
+.footer {
+  background: red;
+}
+
+.footer-bar {
+  border-top: 2px solid #999999;
+  background: tomato;
+  padding: 2em 0;
+}
+
+.footer-bar img{
+  width: 5rem;
+  height: 5rem;
+  border-bottom: 2px solid #999999;
+}
+
+.footer-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-bar li {
+  color: inherit;
+}
+
+.footer-bar h4 {
+  color: #f44336;
+}
