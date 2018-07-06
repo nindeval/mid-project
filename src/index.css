@@ -1,3 +1,9 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: 1px solid rgba(15, 127, 127, .14);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,14 +12,32 @@ body {
   font-size: 16px;
 }
 
-* {
-
+body:focus {
+  outline: none;
 }
 
-h1, h2, h3, h4, h5 {
+a {
+  color: #0f0e0e;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display';
 }
 
+header,
+footer,
+article,
+section {
+    display: block;
+}
+.div {
+
+}
+
+.section {
+  display: block;
+  background: teal;
+}
 
 .nav-bar {
   text-align: left;
@@ -118,56 +142,125 @@ span.description {
     margin: 0;
 }
 /***** Content *****/
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px;
+}
 
 .container {
-    margin: 0 1em;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  box-sizing: border-box;
 }
 
 .row {
+  flex-flow: row wrap;
+}
+
+.col {
+  flex-flow: column wrap;
+}
+
+.element {
+  min-width: 100px;
+}
+
+.content {
+  flex: 1 100%;
+}
+
+.content li {
+  list-style-type: none;
+}
+
+.structure {
+  min-height: auto;
+}
+
+.structure-weight {
+  flex: 1 33.333333%;
+}
+
+.a {
+  flex: 1 30%;
+  margin: 1.5%;
+}
+
+.product-page {
   width: 100%;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
+.item-img {
+  /*z-index:1;*/
 }
 
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+
+#all-products {
+  margin: 3rem;
 }
 
+.product-list {
+  padding: 1.5rem;
+}
+
+.product-card {
+  border: 1px solid #dddddd;
+  padding: 1rem;
+}
+
+.product-card img.expand {
+  width: 20.5rem;
+  heigh: 20.5rem;
+}
+
+.product-card h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.price {
+  margin: 0;
+  padding: 0;
+}
 /***** Footer *****/
-.footer {
-  background: red;
-}
-
-.footer-bar {
+footer {
   border-top: 2px solid #999999;
-  background: tomato;
-  padding: 2em 0;
+  padding: 2em 10em;
 }
 
-.footer-bar img{
-  width: 5rem;
-  height: 5rem;
+.footer img{
+  width: 6rem;
+  height: 6rem;
   border-bottom: 2px solid #999999;
 }
 
-.footer-bar ul {
+.footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.footer-bar li {
+.footer li {
   color: inherit;
+  font-weight: normal;
+  line-height: 2rem;
 }
 
-.footer-bar h4 {
+.footer-title {
   color: #f44336;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer i {
+  color: inherit;
+  margin-right: 0.8rem;
 }

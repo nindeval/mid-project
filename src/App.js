@@ -14,13 +14,14 @@ class App extends Component {
       <div id="App-container">
         <Nav />
         <HeaderImg />
-        <div class="container">
-          <switch>
-            <Route exact path="/category/:category-type" component={AllProducts} />
+        <div className="container">
+          <Switch>
+            <Route exact path="/All" component={AllProducts} />
+            <Route exact path="/products/:category-type" component={AllProducts} />
             <Route exact path="/terms" component={Terms} />
             <Route exact path="/about" component={About} />
             <Route exact path="/#" component={Homepage} />
-          </switch>
+          </Switch>
         </div>
         <Footer />
       </div>
