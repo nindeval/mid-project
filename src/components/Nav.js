@@ -12,12 +12,12 @@ class Nav extends Component{
             <li><Link to="/terms">Terms & Conditions </Link></li>
             <li className="null">|</li>
             <li><Link to="/all"> All </Link></li>
-            <li><Link className="sub" to="/categories/seating">Seating</Link></li>
-            <li><Link className="sub" to="/categories/tables">Tables</Link></li>
-            <li><Link className="sub" to="/categories/desks">Desks</Link></li>
-            <li><Link className="sub" to="/categories/storage">Storage</Link></li>
-            <li><Link className="sub" to="/categories/bedroom">Bedroom</Link></li>
-            <li><Link className="sub" to="/categories/miscellaneous">Misc</Link></li>
+            <li><Link className="sub" to="/category/seating">Seating</Link></li>
+            <li><Link className="sub" to="/category/tables">Tables</Link></li>
+            <li><Link className="sub" to="/category/desks">Desks</Link></li>
+            <li><Link className="sub" to="/category/storage">Storage</Link></li>
+            <li><Link className="sub" to="/category/bedroom">Bedroom</Link></li>
+            <li><Link className="sub" to="/category/miscellaneous">Misc</Link></li>
             <li className="null">|</li>
             <li className="cart"><i className="fas fa-shopping-cart"></i></li>
           </ul>

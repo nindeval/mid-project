@@ -36,12 +36,14 @@ section {
 
 .section {
   display: block;
-  background: teal;
 }
 
 .nav-bar {
   text-align: left;
   font-weight:400;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
 }
 
 .nav-bar-header {
@@ -130,8 +132,8 @@ section {
 
 h2.header-text {
   font-size: 1.8rem;
-  margin-top: 2rem;
-  margin-bottom: .3rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 span.description {
@@ -140,6 +142,10 @@ span.description {
     font-weight: 600;
     padding: 0;
     margin: 0;
+}
+
+div.clear{
+  clear: both;
 }
 /***** Content *****/
 .wrap {
@@ -187,6 +193,7 @@ span.description {
 
 .a {
   flex: 1 30%;
+  max-width: 30%;
   margin: 1.5%;
 }
 
@@ -199,8 +206,33 @@ span.description {
 }
 
 
-#all-products {
+#products {
   margin: 3rem;
+}
+
+#products button {
+  float: right;
+  position: relative;
+  padding: 1rem .7rem;
+  margin-left: 1em;
+  font-weight: bold;
+  background: #ffffff;
+  color: #dddddd;
+  border: 2px solid #dddddd;
+  border-radius: 0;
+}
+
+#products button:active {
+  border: 2px solid tomato;
+  color: tomato;
+}
+
+#products .top-product-label {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  float: right;
+  position: relative;
 }
 
 .product-list {
@@ -220,6 +252,19 @@ span.description {
 .product-card h4 {
   margin: 0;
   padding: 0;
+}
+
+.product-single-info {
+
+}
+
+.product-single-image{
+
+}
+
+.showing-label {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .price {
