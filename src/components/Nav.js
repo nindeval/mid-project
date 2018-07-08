@@ -7,7 +7,7 @@ class Nav extends Component{
       <div className="nav-bar">
         <header className="nav-bar-header">
           <ul>
-            <li><Link to="#"><img src="/mf-logo-white.svg" /></Link></li>
+            <li><Link to="/"><img src="/mf-logo-white.svg" /></Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/terms">Terms & Conditions </Link></li>
             <li className="null">|</li>

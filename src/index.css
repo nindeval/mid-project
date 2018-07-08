@@ -1,4 +1,5 @@
 * {
+  color: #222222;
   text-decoration: none;
   box-sizing: border-box;
   outline: 1px solid rgba(15, 127, 127, .14);
@@ -22,6 +23,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display';
+  color: #222222;
 }
 
 header,
@@ -44,66 +46,67 @@ section {
   position: fixed;
   overflow: hidden;
   width: 100%;
+  z-index: 1;
 }
 
 .nav-bar-header {
-  background-color: #000;
+  background-color: #222222;
 }
 
 /***** Nav *****/
 
 .nav-bar ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     overflow: hidden;
-    }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
 .nav-bar li {
-     float: left;
-    }
+  float: left;
+}
 
 .nav-bar li a {
-     display: block;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
-     color: white;
-    }
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
 
 .nav-bar li a:hover {
-     background-color: #111;
-    }
+  background-color: #111;
+}
 
 .nav-bar .null {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-    }
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
 
 .nav-bar .sub {
-    color: #2196f3;
-    }
+  color: #2196f3;
+}
 
 .nav-bar .cart {
-      display: block;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      color: white;
-      background-color: #FFC107;
-    }
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+  background-color: #FFC107;
+}
 .nav-bar .cart:hover {
-      display: block;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      background-color: #fcc82a;
-      }
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #fcc82a;
+}
 .nav-bar i {
-    color: black;
+  color: black;
 }
 .nav-bar li:first-child img {
   max-width: 22px;
@@ -111,23 +114,25 @@ section {
 /***** Header  Img *****/
 
 .bg {
-    background-image: url("http://www.papalote.org.mx/assets/img/img/login-bg/bg-2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5rem 0 7rem 0;
-    color: white;
-    text-align: center;
+  background-image: url("http://www.papalote.org.mx/assets/img/img/login-bg/bg-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0 7rem 0;
+  color: white;
+  text-align: center;
 }
 
 .bg h1 {
   font-size: 3rem;
+  color: white;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 .bg span {
   font-size: 1.2rem;
+  color: white;
 }
 
 h2.header-text {
@@ -137,11 +142,11 @@ h2.header-text {
 }
 
 span.description {
-    color: #999999;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 0;
-    margin: 0;
+  color: #999999;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
 }
 
 div.clear{
@@ -197,6 +202,18 @@ div.clear{
   margin: 1.5%;
 }
 
+.b {
+  flex: 55%;
+  max-width: 55%;
+  margin: 1%;
+}
+
+.c {
+  flex: 1 40%;
+  max-width: 40%;
+  margin: 1%;
+}
+
 .product-page {
   width: 100%;
 }
@@ -210,23 +227,6 @@ div.clear{
   margin: 3rem;
 }
 
-#products button {
-  float: right;
-  position: relative;
-  padding: 1rem .7rem;
-  margin-left: 1em;
-  font-weight: bold;
-  background: #ffffff;
-  color: #dddddd;
-  border: 2px solid #dddddd;
-  border-radius: 0;
-}
-
-#products button:active {
-  border: 2px solid tomato;
-  color: tomato;
-}
-
 #products .top-product-label {
   margin-top: 1rem;
   font-size: 1.3rem;
@@ -235,12 +235,29 @@ div.clear{
   position: relative;
 }
 
+.top-product-label button {
+  float: right;
+  position: relative;
+  padding: 1rem .7rem;
+  margin-left: 1em;
+  font-weight: bold;
+  background: #ffffff;
+  color: #999999;
+  border: 2px solid #999999;
+  border-radius: 0;
+}
+
+.top-product-label button:active {
+  border: 2px solid tomato;
+  color: tomato;
+}
+
 .product-list {
   padding: 1.5rem;
 }
 
 .product-card {
-  border: 1px solid #dddddd;
+  border: 1px solid #999999;
   padding: 1rem;
 }
 
@@ -249,26 +266,73 @@ div.clear{
   heigh: 20.5rem;
 }
 
+.product-card h3 {
+  font-size: 1.3rem;
+  line-height: 0!important;
+  margin: 0;
+  padding: 0;
+}
+
 .product-card h4 {
   margin: 0;
   padding: 0;
 }
 
 .product-single-info {
+  border: 1px solid #999999;
+  padding: 1rem;
+  height: 13rem;
+}
 
+.product-single-info small {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.product-single-info button {
+  background-color: #f44336;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin-top: 0.2em;
+  text-align: center;
+  border-radius: 2rem;
+  float:right;
+  border: none;
+}
+
+.api-info{
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.api-info p{
+  color: #99999;
+  font-weight: 400;
+  display: inline-block;
+  width: 2.5rem;
+  margin: 0;
 }
 
 .product-single-image{
+}
 
+.top-product-label {
+  color: #999999;
 }
 
 .showing-label {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
+  color: #FFC107;
 }
 
 .price {
-  margin: 0;
+  font-size: 1.2rem;
+  color: #999999;
+  font-weight: 600;
+  margin: .6rem 0 0 0;
   padding: 0;
 }
 /***** Footer *****/

@@ -10,7 +10,7 @@ class ProductCard extends Component {
         <Link to={`/products/${this.props.pid}`}>
           <img className="expand" src={this.props.imgURL} />
           <h4>{this.props.title}</h4>
-          <p className="price">{this.props.amount}</p>
+          <p className="price"> ${this.props.amount}</p>
         </Link>
       </div>
     );

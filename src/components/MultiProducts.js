@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ProductCard from './ProductCard.js'
-import ProductSingle from './ProductSingle.js'
 import request from 'superagent';
 
 class MultiProducts extends Component{

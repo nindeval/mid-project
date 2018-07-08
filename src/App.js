@@ -18,9 +18,11 @@ class App extends Component {
         <HeaderImg />
         <div className="container">
           <Switch>
-            <Route exact path="/all" component={MultiProducts} />
+
             <Route exact path="/category/:catName" component={MultiProducts} />
             <Route exact path="/products/:pid" component={ProductSingle} />
+            <Route exact path="/all" component={MultiProducts} />
+
             <Route exact path="/terms" component={Terms} />
             <Route exact path="/about" component={About} />
             <Route exact path="/#" component={Homepage} />
