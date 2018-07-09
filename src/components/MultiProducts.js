@@ -79,7 +79,7 @@ _fetchFurnitureData(componentProps){
         </div>
         <div className="row top-product-label a">
           <button>On Sale</button>
-          <button>All items</button>
+          <button className="select">All items</button>
           <div className="clear"></div>
           <div className="top-product-label">
             <span className="showing-label">{this.state.dataList.length}</span> items showing

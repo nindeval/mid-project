@@ -2,7 +2,7 @@
   color: #222222;
   text-decoration: none;
   box-sizing: border-box;
-  /*outline: 1px solid rgba(15, 127, 127, .14);*/
+  outline: 1px solid rgba(15, 127, 127, .14);
 }
 
 body {
@@ -109,7 +109,7 @@ section {
   color: black;
 }
 .nav-bar li:first-child img {
-  max-width: 22px;
+  max-width: 21px;
 }
 /***** Header  Img *****/
 
@@ -235,22 +235,76 @@ div.clear{
   position: relative;
 }
 
-.top-product-label button {
-  float: right;
-  position: relative;
-  padding: 1rem .7rem;
-  margin-left: 1em;
+.center {
+  text-align: center;
+}
+
+.not-found button {
+  padding: 1rem 1.7rem 1.4rem .7rem;
   font-weight: bold;
+  font-size: 1em;
   background: #ffffff;
-  color: #999999;
-  border: 2px solid #999999;
+  border: 1px solid #f44336;
+  color: #f44336;
   border-radius: 0;
 }
 
-.top-product-label button:active {
-  border: 2px solid tomato;
-  color: tomato;
+.not-found i.button-icon{
+  color: #f44336;
+  font-size: 1.5rem;
+  margin: 0 1rem 0 .5rem;
 }
+
+.not-found i.big-icon {
+  font-size: 18rem;
+  margin-bottom: 2rem;
+  color: #999999;
+}
+
+.not-found p{
+  font-size: 2rem;
+  color: #999999;
+  text-align: center;
+}
+
+.browser-button {
+  margin: 1rem;
+  text-align: center;
+}
+
+.browser-button button {
+  padding: 1rem 5rem ;
+  margin: 1rem;
+  font-weight: 600;
+  font-size: 1em;
+  background: #ffffff;
+  border: 1px solid #2196f3;
+  color: #2196f3;
+  border-radius: 0;
+}
+
+.top-product-label button {
+  padding: 1rem .7rem ;
+  margin-left: 1rem;
+  float: right;
+  font-weight: 400;
+  font-size: .9em;
+  background: #ffffff;
+  border: 1px solid #999999;
+  color: #999999;
+  border-radius: 0;
+}
+
+.top-product-label .select {
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+
+.top-product-label button:active {
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+
 
 .product-list {
   padding: 1.5rem;
@@ -329,22 +383,23 @@ div.clear{
 }
 
 .price {
-  font-size: 1.2rem;
+  text-align: right;
   color: #999999;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: .6rem 0 0 0;
   padding: 0;
 }
 /***** Footer *****/
 footer {
-  border-top: 2px solid #999999;
+  border-top: 1px solid #999999;
   padding: 2em 10em;
 }
 
 .footer img{
   width: 6rem;
   height: 6rem;
-  border-bottom: 2px solid #999999;
+  border-bottom: 1px solid #999999;
 }
 
 .footer ul {

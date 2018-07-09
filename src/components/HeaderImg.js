@@ -6,8 +6,8 @@ class HeaderImg extends Component{
     return(
       <div>
         <div className="bg">
-          <h1>Main Title</h1>
-          <span>Main description<br /> and more description</span>
+          <h1>Mallory Furniture</h1>
+          <span>Your furniture is old<br /> Ours is older.</span>
         </div>
       </div>
     );

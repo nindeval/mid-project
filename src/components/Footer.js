@@ -11,7 +11,7 @@ class Footer extends Component{
                 <section>
                   <div className="container">
                     <center>
-                      <Link to="#">
+                      <Link to="/home">
                         <img src="/mf-logo-black.svg" />
                       </Link>
                     </center>
@@ -20,17 +20,17 @@ class Footer extends Component{
                         <div className="flex element a">
                           <div className="content">
                             <p className="footer-title">Company</p>
-                            <li><Link to="#"> About </Link></li>
+                            <li><Link to="/about"> About </Link></li>
                             <li><Link to="#"> Press </Link></li>
-                            <li><Link to="#"> Terms + Conditions </Link></li>
+                            <li><Link to="/terms"> Terms + Conditions </Link></li>
                           </div>
                         </div>
                         <div className="flex element a">
                           <div className="content">
                             <p className="footer-title">Categories</p>
-                            <li><Link to="#">Seating</Link></li>
-                            <li><Link to="#">Tables</Link></li>
-                            <li><Link to="#">Misc</Link></li>
+                            <li><Link to="/category/seating">Seating</Link></li>
+                            <li><Link to="/category/tables">Tables</Link></li>
+                            <li><Link to="/category/miscellaneous">Misc</Link></li>
                           </div>
                         </div>
                         <div className="flex element a">
