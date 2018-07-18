@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react';
 import ProductCard from './ProductCard.js'
 import request from 'superagent';
@@ -7,7 +8,8 @@ class MultiProducts extends Component{
     super(args)
 
     this.state = {
-      dataList : []
+      dataList : [],
+      showOnsaleList : false
     }
   }
 
@@ -26,7 +28,7 @@ _fetchFurnitureData(componentProps){
   .then((serverRes)=> {
     const serverResJson = serverRes.body
     this.setState({
-      dataList : serverResJson
+      dataList : serverResJson,
     })
   })
   .catch((err)=> {
@@ -42,8 +44,22 @@ _fetchFurnitureData(componentProps){
     this._fetchFurnitureData(newProps)
   }
 
-  _renderCards(dataList){
-    let allFornitureComponentList =  this.state.dataList.map((cardObj, i)=>{
+  _renderCards(products){
+    let listToRender = products
+  //  console.log(dataList[0]);
+  //  console.log("+++++++++");
+    let filteredList;
+    if(this.state.showOnsaleList === true){
+      filteredList = products.filter((product) => {
+        return product.onSale === this.state.showOnsaleList
+       })
+    } else {
+      filteredList = products
+    }
+
+    //console.log(filteredList.map)
+
+    let allFornitureComponentList =  filteredList.map((cardObj, i)=>{
       return <ProductCard
               imgURL={cardObj.imageLink}
               title={cardObj.item}
@@ -55,10 +71,17 @@ _fetchFurnitureData(componentProps){
     return allFornitureComponentList
   }
 
-  render (){
-    console.log('------')
-    console.log(this.state.dataList)
+  _setFilteronClick(){
+    this.setState({
+      showOnsaleList : !this.state.showOnsaleList
+    })
+  }
 
+
+  render (){
+    //console.log('------')
+    //console.log(this.state.dataList)
+    console.log(this.state.showOnsaleList);
     let titleText = 'All Products'
     let titleTextLower = 'All Product'
 
@@ -78,8 +101,8 @@ _fetchFurnitureData(componentProps){
           <span className="description">All {titleTextLower} products</span>
         </div>
         <div className="row top-product-label a">
-          <button>On Sale</button>
-          <button className="select">All items</button>
+          <button onClick={ ()=> { this._setFilteronClick() }}>On Sale</button>
+          <button className="select" onClick={ ()=> { this._setFilteronClick() }}>All items</button>
           <div className="clear"></div>
           <div className="top-product-label">
             <span className="showing-label">{this.state.dataList.length}</span> items showing
